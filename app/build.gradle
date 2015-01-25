@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 'Google Inc.:Google APIs:18'
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.javapapers.android"
+        minSdkVersion 9
+        targetSdkVersion 16
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.google.android.gms:play-services:6.5.87'
+}
