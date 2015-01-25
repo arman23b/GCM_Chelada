@@ -1,0 +1,5 @@
+/home/bolat/Projects/android-examples/GCMDemo/app/build/intermediates/classes/debug
+/home/bolat/Projects/android-examples/GCMDemo/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-d1afd52db10c42beb88333a57b05a6c18c249c67.jar
+/home/bolat/Projects/android-examples/GCMDemo/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-976869df7544821486ae6d9ce5add05bff0bbdeb.jar
+/home/bolat/Projects/android-examples/GCMDemo/app/build/intermediates/pre-dexed/debug/classes-3a572c16c86a19166eca3eaa95303ed8c736203b.jar
+/home/bolat/Projects/android-examples/GCMDemo/app/build/intermediates/pre-dexed/debug/classes-b78bb3e1364c2373cb7a342a7c429779082450d9.jar
