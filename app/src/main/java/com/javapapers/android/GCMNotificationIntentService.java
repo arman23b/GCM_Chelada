@@ -54,9 +54,10 @@ public class GCMNotificationIntentService extends IntentService {
 				}
 				Log.i(TAG, "Completed work @ " + SystemClock.elapsedRealtime());
 
-				sendNotification("Message Received from Google GCM Server: "
-						+ extras.get(Config.MESSAGE_KEY));
-				Log.i(TAG, "Received: " + extras.toString());
+                String message = extras.toString();
+
+				sendNotification("GCM: " + message);
+				Log.i(TAG, "Received: " + message);
 			}
 		}
 		GcmBroadcastReceiver.completeWakefulIntent(intent);

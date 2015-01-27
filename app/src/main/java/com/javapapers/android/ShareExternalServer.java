@@ -15,7 +15,7 @@ public class ShareExternalServer {
 
         String deviceID = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
 
-        client.addPostParam(new BasicNameValuePair( "dev_id", deviceID ));
+        client.addPostParam(new BasicNameValuePair("dev_id", deviceID));
         client.addPostParam(new BasicNameValuePair("reg_id", regId));
         client.addPostParam(new BasicNameValuePair("name", "Arman's Phone"));
         client.execute();

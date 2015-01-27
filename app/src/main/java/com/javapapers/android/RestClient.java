@@ -59,8 +59,11 @@ public class RestClient {
         HttpPost request = new HttpPost(url);
         setHeadersParameters(request);
 
+        StringEntity entity;
         try {
-            StringEntity entity = new StringEntity(getJsonObject().toString(), HTTP.UTF_8);
+            JSONObject jsonObj = getJsonObject();
+            Log.d(LOG_TAG, "Request JSON: " + jsonObj.toString());
+            entity = new StringEntity(jsonObj.toString(), HTTP.UTF_8);
             entity.setContentType("application/json");
             request.setEntity(entity);
         } catch( UnsupportedEncodingException e ) {
@@ -71,6 +74,7 @@ public class RestClient {
         HttpClient client = new DefaultHttpClient();
         try {
 
+            Log.d(LOG_TAG, "Sending request to: " + url);
             HttpResponse httpResponse = client.execute(request);
             Integer responseCode = httpResponse.getStatusLine().getStatusCode();
             String responseMessage = httpResponse.getStatusLine().getReasonPhrase();
